@@ -1,0 +1,114 @@
+{
+  "metrics": {
+    "accuracy": 0.8048780487804879,
+    "precision": 0.8505747126436781,
+    "recall": 0.8705882352941177,
+    "f1": 0.8604651162790697,
+    "balanced_accuracy": 0.7642414860681115,
+    "majority_baseline_accuracy": 0.6910569105691057
+  },
+  "n_rows": 614,
+  "n_features": 11,
+  "n_train": 491,
+  "n_test": 123,
+  "random_state": 42,
+  "test_size": 0.2,
+  "params": {
+    "n_estimators": 200,
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "class_weight": "balanced"
+  },
+  "class_counts_all": {
+    "Not approved": 192,
+    "Approved": 422
+  },
+  "cv_f1_scores": [
+    0.8428571428571429,
+    0.71875,
+    0.8444444444444444,
+    0.8163265306122449,
+    0.8428571428571429
+  ],
+  "trained_at": "2026-10-23T11:17:49",
+  "sklearn_version": "1.9.1",
+  "confusion_matrix": [
+    [
+      25,
+      13
+    ],
+    [
+      11,
+      74
+    ]
+  ],
+  "classification_report": {
+    "Not approved": {
+      "precision": 0.6944444444444444,
+      "recall": 0.6578947368421053,
+      "f1-score": 0.6756756756756757,
+      "support": 38.0
+    },
+    "Approved": {
+      "precision": 0.8505747126436781,
+      "recall": 0.8705882352941177,
+      "f1-score": 0.8604651162790697,
+      "support": 85.0
+    },
+    "accuracy": 0.8048780487804879,
+    "macro avg": {
+      "precision": 0.7725095785440612,
+      "recall": 0.7642414860681115,
+      "f1-score": 0.7680703959773727,
+      "support": 123.0
+    },
+    "weighted avg": {
+      "precision": 0.8023393452325328,
+      "recall": 0.8048780487804879,
+      "f1-score": 0.8033756956048504,
+      "support": 123.0
+    }
+  },
+  "top_features": [
+    {
+      "feature": "ApplicantIncome",
+      "importance": 0.2094
+    },
+    {
+      "feature": "LoanAmount",
+      "importance": 0.1936
+    },
+    {
+      "feature": "Credit_History",
+      "importance": 0.1824
+    },
+    {
+      "feature": "CoapplicantIncome",
+      "importance": 0.1107
+    },
+    {
+      "feature": "Loan_Amount_Term",
+      "importance": 0.0447
+    },
+    {
+      "feature": "Property_Area_Semiurban",
+      "importance": 0.0256
+    },
+    {
+      "feature": "Dependents_1",
+      "importance": 0.0227
+    },
+    {
+      "feature": "Dependents_0",
+      "importance": 0.022
+    },
+    {
+      "feature": "Property_Area_Rural",
+      "importance": 0.0203
+    },
+    {
+      "feature": "Property_Area_Urban",
+      "importance": 0.019
+    }
+  ]
+}
